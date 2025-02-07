@@ -60,6 +60,48 @@ button {
     height: auto;
     margin-top: 20px;
 }
+.youtube-container {
+    position: relative;
+    width: 560px; /* Set width to your desired value */
+    height: 315px; /* Set height to your desired value */
+    cursor: pointer;
+    margin: 20px auto; /* Center the video */
+}
+
+.youtube-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.play-button:hover {
+    opacity: 1;
+}
+
+.play-button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -15px;
+    border-style: solid;
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    transform: translate(-50%, -50%);
+}
 
 #thankYouMessage {
     color: #ffc107; /* A celebratory gold/yellow color */
