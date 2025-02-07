@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fce4ec; /* Light Pink Background */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this line! */
+}
+
+h1 {
+    color: #e91e63; /* Hot Pink */
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#yesBtn {
+    background-color: red; /* Green */
+    color: white;
+}
+
+#noBtn {
+    background-color: orange; /* Red */
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #d32f2f;
+}
+
+#noBtn:hover {
+    background-color: #388e3c;
+}
+
+#hugKissGif {
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+    margin-top: 20px;
+}
+
+#thankYouMessage {
+    color: #ffc107; /* A celebratory gold/yellow color */
+    font-size: 3em;
+    margin-bottom: 10px; /* Space between text and GIF */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a shadow for emphasis */
+    animation: pulse 1.5s infinite alternate, fadeIn 1s ease-in-out; /* Add animations here */
+}
+
+/* Keyframe animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
