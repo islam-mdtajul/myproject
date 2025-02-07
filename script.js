@@ -1,10 +1,12 @@
 const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
+const proposeContainer = document.getElementById('proposeContainer');
 const gifContainer = document.getElementById('gifContainer');
 const hugKissGif = document.getElementById('hugKissGif');
 const container = document.querySelector('.container'); // Get the container element
 
 yesBtn.addEventListener('click', () => {
+    proposeContainer.style.display = 'none';
     gifContainer.style.display = 'block'; // Show the GIF and message
     // Optional: Disable the buttons after clicking "Yes"
     yesBtn.disabled = true;
@@ -16,6 +18,7 @@ noBtn.addEventListener('click', () => {
     newYesBtn.id = 'yesBtn';
     newYesBtn.textContent = 'Yes';
     newYesBtn.addEventListener('click', () => {
+        proposeContainer.style.display = 'none';
         gifContainer.style.display = 'block'; // Show the GIF
         // Optional: Disable the buttons after clicking "Yes"
         newYesBtn.disabled = true;
